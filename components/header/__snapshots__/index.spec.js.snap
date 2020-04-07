@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Render test should render correctly 1`] = `
+<div
+  class="header"
+>
+  <h1
+    class="headertitle"
+  >
+    Hotel Search
+  </h1>
+</div>
+`;

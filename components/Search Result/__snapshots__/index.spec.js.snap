@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Result test should render correctly 1`] = `
+<div
+  class="hotel-search__result-section"
+>
+  <div
+    class="cards"
+  >
+    <div
+      class="card"
+    >
+      <p>
+        Media One Hotel
+      </p>
+      <h2
+        class="city"
+      >
+        dubai
+      </h2>
+      <p>
+        $102.2
+      </p>
+    </div>
+    <div
+      class="card"
+    >
+      <p>
+        Rotana Hotel
+      </p>
+      <h2
+        class="city"
+      >
+        cairo
+      </h2>
+      <p>
+        $80.6
+      </p>
+    </div>
+    <div
+      class="card"
+    >
+      <p>
+        Le Meridien
+      </p>
+      <h2
+        class="city"
+      >
+        london
+      </h2>
+      <p>
+        $89.6
+      </p>
+    </div>
+    <div
+      class="card"
+    >
+      <p>
+        Golden Tulip
+      </p>
+      <h2
+        class="city"
+      >
+        paris
+      </h2>
+      <p>
+        $109.6
+      </p>
+    </div>
+    <div
+      class="card"
+    >
+      <p>
+        Novotel Hotel
+      </p>
+      <h2
+        class="city"
+      >
+        Vienna
+      </h2>
+      <p>
+        $111
+      </p>
+    </div>
+    <div
+      class="card"
+    >
+      <p>
+        Concorde Hotel
+      </p>
+      <h2
+        class="city"
+      >
+        Manila
+      </h2>
+      <p>
+        $79.4
+      </p>
+    </div>
+  </div>
+</div>
+`;

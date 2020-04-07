@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Form Test should render correctly 1`] = `
+Array [
+  <div
+    class="hotel-search__divsection"
+  >
+    <div
+      class="panel panel-default"
+    >
+      <div
+        class="formErrors"
+      >
+        <ul />
+      </div>
+    </div>
+    <div
+      class="hotel-search__field-row"
+    >
+      <div
+        class="input-field"
+      >
+        <input
+          id="txtCity"
+          placeholder="City"
+          type="text"
+          value=""
+        />
+        <label
+          class="topLabel"
+          for="txtCity"
+        >
+          City
+        </label>
+      </div>
+      <div
+        class="input-field"
+      >
+        <input
+          id="txtName"
+          placeholder="Hotel Name"
+          type="text"
+          value=""
+        />
+        <label
+          class="topLabel"
+          for="txtName"
+        >
+          Hotel Name
+        </label>
+      </div>
+    </div>
+    <div
+      class="hotel-search__field-row"
+    >
+      <div
+        class="input-field"
+      >
+        <input
+          id="txtPriceRange"
+          placeholder="Price Range"
+          type="text"
+          value=""
+        />
+        <label
+          class="topLabel"
+          for="txtPriceRange"
+        >
+          Price Range
+        </label>
+      </div>
+      <div
+        class="input-field"
+      >
+        <input
+          id="txtDateRange"
+          placeholder="Date Range"
+          type="text"
+          value=""
+        />
+        <label
+          class="topLabel"
+          for="txtDateRange"
+        >
+          Date Range
+        </label>
+      </div>
+    </div>
+    <div
+      class="btndiv"
+    >
+      <input
+        class="btnsumbit"
+        type="submit"
+        value="Search"
+      />
+    </div>
+  </div>,
+  <div
+    class="hotel-search__record-msg"
+  />,
+]
+`;

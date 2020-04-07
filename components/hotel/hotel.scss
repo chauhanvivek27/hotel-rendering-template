@@ -1,0 +1,231 @@
+$color: black;
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+$breakpoint-mobile: 768px;
+
+$blockName: ".hotel-search";
+
+#{$blockName} {
+  .headertitle {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 340;
+    padding-left: 40px;
+  }
+  &__divsection {
+    max-width: 1110px;
+    margin: 0 auto;
+    min-height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 30px rgba(233, 223, 255, 1);
+    padding: 20px;
+    & .error {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.1rem;
+      margin: 20px;
+      color: red;
+    }
+  }
+  .header {
+    height: 40px;
+    min-width: 320px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    z-index: 9;
+    width: 100%;
+    position: relative;
+    color: white;
+    background: linear-gradient(150deg, #e1163c, #a11453);
+    border-color: #e51937;
+  }
+
+  &__field-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+    }
+    & .txt-field {
+      display: block;
+      position: relative;
+      width: 30%;
+      justify-content: center;
+    }
+    & .txtlabel {
+      width: 100%;
+      display: inline-block;
+      height: 64px;
+      line-height: 64px;
+      text-align: center;
+    }
+
+    .input-field {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      border: 2px solid rgba(gray, 0.15);
+      height: 60px;
+      &:first-child {
+        margin-left: 0;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+
+      .topLabel {
+        position: absolute;
+        padding: 5px 0 0 12px;
+        top: 16px;
+        font-size: 20px;
+        bottom: -3px;
+        @media (max-width: $breakpoint-mobile) {
+          position: relative;
+          padding: 5px 0 0 12px;
+          top: -16px;
+          font-size: 20px;
+          margin-left: 0;
+        }
+      }
+      input {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: inherit;
+        position: relative;
+        top: 15px;
+        border-width: 0;
+        padding-left: 12px;
+        width: 100%;
+        background-color: transparent;
+        overflow: hidden;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 40px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: all 0.2s ease;
+        &::placeholder {
+          color: transparent;
+        }
+        &:focus,
+        &:not(:placeholder-shown) {
+          outline: none;
+          & + .topLabel {
+            transform: translate(1%, -30%) scale(0.8);
+            opacity: 0.25;
+            font-size: 1 rem;
+            @media (max-width: $breakpoint-mobile) {
+              transform: translate(1%, -20%) scale(0.4);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .uldata {
+    float: left;
+    list-style-type: none;
+    width: 80%;
+  }
+
+  ul .heading {
+    background-color: rgb(134, 130, 130);
+    width: 80%;
+    text-align: center;
+  }
+
+  &__record-msg {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .errmsg {
+    color: red;
+  }
+
+  .btnsumbit {
+    color: #fff;
+    background: #c60c30;
+    border: 0;
+    width: 100px;
+    height: 40px;
+  }
+
+  .formErrors {
+    margin-bottom: 20px;
+    ul {
+      margin: 0;
+      li {
+        width: 80%;
+        display: flex;
+      }
+    }
+  }
+
+  & .error {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    color: red;
+  }
+
+  .btndiv {
+    display: flex;
+    justify-content: center;
+  }
+  .txtfield span {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    padding-right: 20px;
+    float: left;
+    min-width: 140px;
+  }
+
+  ul li span {
+    padding: 0 10px 0 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    display: inline-flex;
+    color: red;
+  }
+  &__result-section {
+    padding-bottom: 30px;
+    text-align: center;
+    .card {
+      color: black;
+      padding: 1rem;
+      height: 4rem;
+      box-shadow: 0 0 30px #e9dfff;
+    }
+    .cards {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 1rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      padding: 0 20px;
+      p {
+        margin: 0;
+      }
+      & .city {
+        margin: 0;
+        text-transform: capitalize;
+      }
+      @media (min-width: $breakpoint-mobile) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
